@@ -1,0 +1,48 @@
+.active-modal-container {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  .modal {
+    width: 512px;
+    height: 471px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    img {
+      width: 334px;
+      height: 282px;
+      background: transparent 0% 0% no-repeat padding-box;
+      opacity: 1;
+    }
+    p {
+      margin: 0;
+    }
+    .approval-modal-text {
+      width: 262px;
+      height: 28px;
+      font-family: "poppins";
+      font-size: 20px;
+      line-height: 34px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      color: #222222;
+      text-transform: uppercase;
+      opacity: 1;
+      text-align: center;
+    }
+  }
+}
+.inactive-modal-container {
+  display: none;
+}

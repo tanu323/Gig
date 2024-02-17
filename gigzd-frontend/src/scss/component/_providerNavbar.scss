@@ -1,0 +1,229 @@
+.provider-navbar-main {
+  width: 100%;
+  height: 8.33%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 9px #00000045;
+  border-radius: 0px 0px 12px 12px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .provider-company-logo {
+    border: 1px solid black;
+    width: 78px;
+    height: 57px;
+    opacity: 1;
+    position: relative;
+    left: 3.64%;
+  }
+  .provider-navbar-content-container {
+    width: 467px;
+    height: 55px;
+    opacity: 1;
+    margin-right: 5%;
+  }
+  .provider-navbar-content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+    li {
+      box-sizing: border-box;
+      height: 31px;
+      text-align: left;
+      font: normal normal bold 22px/33px Poppins;
+      letter-spacing: 0px;
+      opacity: 1;
+      cursor: pointer;
+      .link {
+        color: #222222;
+        text-decoration: none;
+        padding: 5px 0;
+      }
+      .active-link {
+        color: blue;
+        text-decoration: none;
+        border-bottom: 5px solid blue;
+        border-radius: 5px;
+        padding: 5px 0;
+      }
+    }
+    .profile-icon {
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .profile-active {
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid blue;
+    }
+    .bell-icon {
+      width: 100%;
+      height: 100%;
+    }
+    .active-bell-icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .provider-navbar-content > li:last-child {
+    width: 49px;
+    height: 49px;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  .blind-back-drop {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    .provider-notification-main-container {
+      position: absolute;
+      width: 426px;
+      // width: 22%;
+      height: fit-content;
+      top: 90px;
+      right: 9.2%;
+      padding: 9px;
+      overflow: hidden;
+      z-index: 99;
+      .provider-notification-inner-container {
+        border-radius: 12px;
+        width: 100%;
+        height: fit-content;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 9px #00000073;
+        opacity: 1;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        padding: 32px 0;
+        .provider-notification-content-backdrop::-webkit-scrollbar {
+          display: none;
+        }
+        .provider-notification-content-backdrop {
+          width: 88.3%;
+          max-height: 400px;
+          overflow-y: auto;
+          scroll-behavior: smooth;
+          box-sizing: border-box;
+          padding: 0 2px;
+          display: grid;
+          gap: 5px;
+          header {
+            width: fit-content;
+            height: 17px;
+            text-align: center;
+            font-family: "Poppins";
+            font-size: 12px;
+            letter-spacing: 0px;
+            color: #583ae0;
+            text-transform: uppercase;
+            line-height: 18px;
+            opacity: 1;
+            margin: 0 0 5px 0;
+          }
+          .provider-notification-content {
+            width: 100%;
+            height: 82px;
+            background: #ececec 0% 0% no-repeat padding-box;
+            border-radius: 5px;
+            opacity: 1;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            box-sizing: border-box;
+            position: relative;
+            .provider-notification-flex-content {
+              height: 40px;
+              width: 95%;
+              display: flex;
+              column-gap: 10px;
+              box-sizing: border-box;
+              .notifictaion-dot {
+                width: 10px;
+                display: grid;
+                place-items: center;
+                .the-dot {
+                  height: 5px;
+                  width: 5px;
+                  background-color: blue;
+                  border-radius: 50%;
+                  display: inline-block;
+                }
+              }
+              .notification-logo {
+                width: 40px;
+                height: 100%;
+                background: #cccccc 0% 0% no-repeat padding-box;
+                opacity: 1;
+                box-sizing: border-box;
+              }
+              p {
+                margin: 0;
+                box-sizing: border-box;
+              }
+              .notification-text {
+                width: 247px;
+                height: 39px;
+                text-align: left;
+                opacity: 1;
+                overflow: hidden;
+                font: normal normal normal 13px/20px Poppins;
+                letter-spacing: 0px;
+                color: #222222;
+                .highlighted-text {
+                  font-family: "poppins";
+                  font-size: 13px;
+                  line-height: 20px;
+                  font-weight: bold;
+                  letter-spacing: 0px;
+                  color: #222222;
+                }
+              }
+              .received-time {
+                position: absolute;
+                top: 7px;
+                right: 7px;
+                font: normal normal normal 13px/20px Poppins;
+                letter-spacing: 0px;
+                color: #222222;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .provider-navbar-main {
+    .provider-navbar-content-container {
+      display: none;
+    }
+    .provider-notification-main-container {
+      display: none;
+    }
+  }
+}

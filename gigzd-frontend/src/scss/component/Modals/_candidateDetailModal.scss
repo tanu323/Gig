@@ -1,0 +1,150 @@
+.active-modal-container {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  .candidate-detail-modal {
+    box-sizing: border-box;
+    width: 512px;
+    // height: 471px;
+    height: 371px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1;
+    display: grid;
+    place-items: center;
+    padding: 37px 40px 59px;
+    position: relative;
+    .candidate-detail-modal-cancel-button {
+      margin: 0;
+      position: absolute;
+      top: 27px;
+      right: 27px;
+      width: 14px;
+      height: 14px;
+      opacity: 1;
+      font: normal normal normal 24px/18px "poppins";
+      cursor: pointer;
+    }
+    .modal-content-container {
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      .candidate-detail-header {
+        width: fit-content;
+        text-align: center;
+        font-family: "poppins";
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 26px;
+        letter-spacing: -0.01px;
+        color: #222222;
+        text-transform: uppercase;
+        opacity: 1;
+        margin: 0 0 25px 0;
+      }
+      .candidate-detail-form {
+        box-sizing: border-box;
+        // border: 1px solid red;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        gap: 20px;
+        .image-upload-fieldset-tag {
+          background: #ffffff 0% 0% no-repeat padding-box;
+          border: 2px dashed #cccccc;
+          border-radius: 6px;
+          opacity: 1;
+          height: 97px;
+          padding: 0;
+          .image-icon-name-div {
+            height: 90%;
+            display: grid;
+            place-items: center;
+            font: normal normal normal 13px/20px Poppins;
+            letter-spacing: 0px;
+            opacity: 1;
+            color: #cccccc;
+            position: relative;
+            .preview-image {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        fieldset {
+          box-sizing: border-box;
+          width: 100%;
+          background: #ffffff 0% 0% no-repeat padding-box;
+          border: 2px solid #cacaca;
+          border-radius: 6px;
+          opacity: 1;
+          .required::before {
+            content: "* ";
+            color: red;
+          }
+          legend {
+            margin: 0;
+            text-align: left;
+            font: normal normal normal 13px/20px Poppins;
+            letter-spacing: 0px;
+            opacity: 1;
+          }
+          select {
+            border: transparent;
+            outline: none;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            font: normal normal normal 17px/26px Poppins;
+            letter-spacing: 0px;
+            color: #222222;
+            opacity: 1;
+          }
+          input {
+            width: 100%;
+            border: transparent;
+            outline: none;
+            text-align: left;
+            font: normal normal normal 17px/26px Poppins;
+            letter-spacing: 0px;
+            color: #222222;
+            opacity: 1;
+          }
+        }
+      }
+      .submit-button {
+        width: 179px;
+        height: 35px;
+        background: #583ae0 0% 0% no-repeat padding-box;
+        border-radius: 6px;
+        opacity: 1;
+        border: transparent;
+        outline: none;
+        font: normal normal medium 15px/25px Poppins;
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-transform: uppercase;
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.inactive-modal-container {
+  display: none;
+}

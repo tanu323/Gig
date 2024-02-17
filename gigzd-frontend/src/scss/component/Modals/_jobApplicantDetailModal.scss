@@ -1,0 +1,68 @@
+.active-modal-container-backdrop {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Black w/ opacity */
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  .modal {
+    width: 500px;
+    height: 100px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  .table-modal {
+    width: 512px;
+    height: fit-content;
+    max-height: 471px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    thead th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #eee;
+      height: 30px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font: normal normal normal 18px/27px Poppins;
+      text-align: left;
+    }
+    tbody>tr:hover{
+      background-color: #eee;
+    }
+    th,
+    td {
+      padding: 8px 16px;
+      height: 20px;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      max-width: 10px;
+    }
+  }
+  .table-modal::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.inactive-modal-container-backdrop {
+  display: none;
+}

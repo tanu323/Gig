@@ -1,0 +1,42 @@
+//Provider
+@import "./component/providerNavbar";
+@import "./pages/provider/registerPage";
+@import "./component/footer";
+@import "./pages/provider/jopPostPage";
+@import "./pages/provider/jopHistoryPage";
+@import "./pages/provider/profilePage";
+@import "./pages/provider/detailedViewPage";
+
+//Candidate
+@import "./component/userNavbar";
+@import "./pages/user/candidateHomePage";
+@import "./pages/user/candidateHistoryPage";
+@import "./pages/user/jobFullView";
+
+@import "./pages/pageNotFound.scss";
+
+//Components
+@import "./component/Modals/approvalModal";
+@import "./component/Modals/registerApproval";
+@import "./component/Modals/candidateJobFilter";
+@import "./component/Modals/candidateJobAppliedModal";
+@import "./component/Modals/candidateDetailModal";
+@import "./component/Modals/profileEditModal";
+@import "./component/Modals/jobApplicantDetailModal";
+@import "./component/Modals/moreActionModal";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 132, 197);
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}

@@ -1,0 +1,305 @@
+.candidate-history-page-main {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  overflow: hidden;
+  .candidate-history-page-container {
+    width: 92.7%;
+    height: 80.18%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+    margin: auto;
+    position: relative;
+    top: 13.33%;
+    display: flex;
+    padding: 25px 50px;
+    box-sizing: border-box;
+    .left {
+      width: 59%;
+      overflow: hidden;
+      .candidate-history-page-header {
+        width: 147px;
+        height: 32px;
+        text-align: left;
+        font-family: "poppins";
+        font-size: 23px;
+        line-height: 21px;
+        font-weight: normal;
+        letter-spacing: -0.01px;
+        color: #222222;
+        text-transform: uppercase;
+        opacity: 1;
+        margin-left: 9px;
+        display: grid;
+        place-items: center;
+        margin-bottom: 1rem;
+      }
+      .history-page-job-container-backdrop {
+        width: 100%;
+        height: 96%;
+        box-sizing: border-box;
+        overflow-y: auto;
+        padding: 9px;
+        .no-data {
+          display: grid;
+          height: 100%;
+          place-items: center;
+          font-family: "poppins";
+          font-size: 23px;
+          line-height: 21px;
+          font-weight: normal;
+          letter-spacing: -0.01px;
+          color: #222222;
+          text-transform: uppercase;
+        }
+        .history-page-job-conatainer {
+          height: fit-content;
+          box-shadow: 0px 0px 9px #00000033;
+          border-radius: 12px;
+          box-sizing: border-box;
+          opacity: 1;
+          position: relative;
+          padding: 20px 40px 20px 35px;
+          margin-bottom: 28px;
+          .history-page-image-div {
+            width: 100px;
+            height: 50px;
+            background: #eae8e8 0% 0% no-repeat padding-box;
+            border-radius: 4px;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 15px;
+            right: 12px;
+            .image-logo {
+              width: 18px;
+              height: 18px;
+              opacity: 1;
+            }
+          }
+          .history-page-job-content-container {
+            height: fit-content;
+            position: relative;
+            overflow: hidden;
+            header {
+              width: 84%;
+              height: fit-content;
+              text-align: left;
+              font-weight: bold;
+              font: normal normal bold 23px/34px Poppins;
+              letter-spacing: 0.92px;
+              color: #1f1f1f;
+              opacity: 1;
+              display: flex;
+              flex-wrap: wrap;
+              padding: 0.5rem 0;
+            }
+            p {
+              margin: 0;
+            }
+            .company-name {
+              height: fit-content;
+              text-align: left;
+              font: normal normal normal 18px/27px Poppins;
+              letter-spacing: 0px;
+              color: #1f1f1f;
+              opacity: 1;
+              margin-top: 2px;
+              word-break: break-all;
+              white-space: normal;
+              padding: 0.5rem 0;
+            }
+            .job-infos-row {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              column-gap: 22px;
+              margin: 0 0 2.5rem 0;
+              width: fit-content;
+              box-sizing: border-box;
+              padding: 0.5rem 0;
+              .job-info {
+                display: flex;
+                align-items: center;
+                gap: 21px;
+                font: normal normal normal 16px/25px Poppins;
+                letter-spacing: 0px;
+                color: #1f1f1f;
+                opacity: 1;
+              }
+            }
+            .description {
+              height: 73px;
+              font: normal normal normal 16px/25px Poppins;
+              color: #1f1f1f;
+              overflow: hidden;
+              margin-bottom: 45px;
+            }
+            .job-detail-footer{
+              display: flex;
+              justify-content: space-between;
+              .posted-time {
+                height: 21px;
+                text-align: left;
+                font: normal normal normal 15px/23px Poppins;
+                letter-spacing: 0px;
+                color: #222222;
+                opacity: 1;
+              }
+              .status{
+                height: 21px;
+                text-align: left;
+                font: normal normal normal 15px/23px Poppins;
+                letter-spacing: 0px;
+                color: #222222;
+                opacity: 1;
+              }
+              .date{
+                height: 21px;
+                text-align: left;
+                font: normal normal normal 15px/23px Poppins;
+                letter-spacing: 0px;
+                color: #222222;
+                opacity: 1;
+              }
+            }
+            .apply-button {
+              width: 139px;
+              height: 35px;
+              background: #583ae0 0% 0% no-repeat padding-box;
+              border: none;
+              border-radius: 6px;
+              opacity: 1;
+              text-align: center;
+              font: normal normal medium 15px/25px Poppins;
+              letter-spacing: 0px;
+              color: #ffffff;
+              text-transform: uppercase;
+              opacity: 1;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .history-page-job-container-backdrop::-webkit-scrollbar {
+        display: none;
+        scroll-behavior: smooth;
+      }
+    }
+    .right {
+      width: 41%;
+      .history-page-filter-box {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 38px;
+        height: 38px;
+        background: #ececec 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .history-page-filter-logo {
+          width: 18px;
+          height: 21px;
+          opacity: 1;
+        }
+      }
+      .history-page-image {
+        position: absolute;
+        top: 30.1%;
+        right: 8.1%;
+        width: 396px;
+        height: 314px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (min-width: 1090px) and (max-width: 1642px) {
+  .candidate-history-page-main {
+    .candidate-history-page-container {
+      .right {
+        width: 41%;
+        .history-page-image {
+          position: absolute;
+          top: 33%;
+          right: 5.1%;
+          width: 349px;
+          height: 276px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1090px) {
+  .candidate-history-page-main {
+    .candidate-history-page-container {
+      padding: 8px 15px;
+      .left {
+        width: 100%;
+        transition: width 0.1s;
+        transition-timing-function: ease-in-out;
+      }
+      .right {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .candidate-history-page-main {
+    height: 100vh;
+    .candidate-history-page-container {
+      padding: 10px 5px;
+      width: 95%;
+      top: 11%;
+      overflow: hidden;
+      .left {
+        .history-page-job-container-backdrop {
+          .history-page-job-conatainer {
+            padding: 15px;
+            height: fit-content;
+            .history-page-image-div {
+              width: 47px;
+              height: 47px;
+              position: static;
+              margin: 8px auto;
+            }
+            .history-page-job-content-container {
+              height: fit-content;
+              header {
+                width: fit-content;
+              }
+              .description {
+                overflow: hidden;
+                height: 79px;
+                margin: 5px 0;
+              }
+              .posted-time {
+                bottom: 40px;
+                position: static;
+                margin: 5px 0;
+              }
+              .apply-button {
+                position: static;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

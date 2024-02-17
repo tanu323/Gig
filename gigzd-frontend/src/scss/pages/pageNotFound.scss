@@ -1,0 +1,18 @@
+.page-main {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  .content-container {
+    // border: 1px solid red;
+    display: grid;
+    place-items: center;
+    text-align: left;
+    font-family: "poppins";
+    font-size: 23px;
+    line-height: 21px;
+    font-weight: normal;
+    letter-spacing: -0.01px;
+    color: #c7bebe;
+  }
+}

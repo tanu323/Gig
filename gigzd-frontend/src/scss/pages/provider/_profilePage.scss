@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.profile-page-main {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  .profile-page-content {
+    width: 92.7%;
+    height: 80.09%;
+    background: #e2e2ff 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+    margin: auto;
+    margin-top: 134px;
+    overflow: hidden;
+    position: relative;
+    .container-header {
+      margin: 0;
+      white-space: nowrap;
+      position: absolute;
+      top: 2.31%;
+      left: 4.71%;
+      width: fit-content;
+      height: 32px;
+      text-align: left;
+      font-family: "poppins";
+      font-size: 23px;
+      line-height: 21px;
+      font-weight: normal;
+      letter-spacing: -0.01px;
+      color: #583ae0;
+      text-transform: uppercase;
+      opacity: 1;
+      display: grid;
+      place-items: center;
+    }
+    .container {
+      width: 95.78%;
+      height: 88.78%;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border-radius: 12px;
+      opacity: 1;
+      margin: auto;
+      margin-top: 78px;
+      display: flex;
+      align-items: center;
+      // overflow: hidden;
+      .left,
+      .right {
+        height: 100%;
+        width: 50%;
+        display: grid;
+        align-items: center;
+        position: relative;
+      }
+      .left > form {
+        margin-left: 50px;
+        margin-right: 17.4%;
+        box-sizing: border-box;
+      }
+      .seperator {
+        width: 0px;
+        height: 96.76%;
+        border-left: 3px solid #ececec;
+        opacity: 1;
+      }
+      .right > form {
+        width: 76.5%;
+        margin-top: 8px;
+        margin-right: 52px;
+        margin-left: 17.4%;
+        box-sizing: border-box;
+      }
+      .image-tag {
+        width: 100%;
+        height: 208px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 2px dashed #583ae0;
+        box-sizing: border-box;
+        border-radius: 6px;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 33px;
+        .image-not-null {
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        .image-null {
+          box-sizing: border-box;
+          width: 20%;
+          height: 35%;
+        }
+      }
+      fieldset:first-child {
+        margin-top: 0;
+      }
+      fieldset {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 70px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 2px solid #cacaca;
+        border-radius: 10px;
+        opacity: 1;
+        box-sizing: border-box;
+        margin-top: 54px;
+        legend {
+          width: fit-content;
+          height: 29px;
+          background: #ffffff 0% 0% no-repeat padding-box;
+          opacity: 1;
+          margin-left: 26px;
+          .required::before {
+            content: "* ";
+            color: #f81515;
+          }
+          .legend-text {
+            margin: 0 4px;
+            width: fit-content;
+            height: 25px;
+            text-align: left;
+            font: normal normal normal 18px/27px Poppins;
+            letter-spacing: 0px;
+            opacity: 1;
+          }
+        }
+      }
+
+      input {
+        box-sizing: border-box;
+        height: 31px;
+        width: 90%;
+        text-align: left;
+        font: normal normal normal 22px/33px Poppins;
+        letter-spacing: 0px;
+        color: #222222;
+        opacity: 1;
+        margin: 0 33px;
+        border: none;
+        outline: none;
+      }
+    }
+    .edit-icon {
+      width: 38px;
+      height: 38px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border-radius: 4px;
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 20px;
+      right: 43px;
+      &:hover {
+        cursor: pointer;
+      }
+      img {
+        width: 19px;
+        height: 19px;
+        background: transparent 0% 0% no-repeat padding-box;
+        opacity: 1;
+      }
+    }
+  }
+}

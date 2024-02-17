@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.job-post-main {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .job-post-page-content {
+    width: 92.7%;
+    height: 80.09%;
+    background: #e2e2ff 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+    margin: auto;
+    position: relative;
+    top: 12.4%;
+    bottom: 7.5%;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    .container-header {
+      white-space: nowrap;
+      position: absolute;
+      top: 1.85%;
+      left: 4.29%;
+      width: fit-content;
+      height: 32px;
+      text-align: left;
+      font-family: "poppins";
+      font-size: 23px;
+      line-height: 21px;
+      font-weight: normal;
+      letter-spacing: -0.01px;
+      color: #583ae0;
+      text-transform: uppercase;
+      opacity: 1;
+      display: grid;
+      place-items: center;
+    }
+
+    .container {
+      width: 95.78%;
+      height: 88.78%;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border-radius: 12px;
+      opacity: 1;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      box-sizing: border-box;
+      position: relative;
+      top: 9.01%;
+      .left,
+      .right {
+        height: 100%;
+        width: 50%;
+        display: grid;
+        place-items: center;
+        position: relative;
+        box-sizing: border-box;
+        overflow: auto;
+      }
+      .left::-webkit-scrollbar {
+        display: none;
+      }
+      .right::-webkit-scrollbar {
+        display: none;
+      }
+      .separator {
+        width: 0px;
+        height: 96.74%;
+        border: 3px solid #ececec;
+        opacity: 1;
+      }
+      form {
+        height: 100%;
+        width: 76.24%;
+        position: relative;
+        box-sizing: border-box;
+
+        fieldset {
+          border: 2px solid #cacaca;
+          border-radius: 10px;
+          box-sizing: border-box;
+          background: #ffffff no-repeat;
+          min-width: 100%;
+          width: fit-content;
+          height: 70px;
+          opacity: 1;
+          margin: 20px 0 0 0;
+          padding: 0 5.07% 3%;
+          display: grid;
+          place-items: center;
+          position: relative;
+          .required::before {
+            content: "* ";
+            color: #f81515;
+          }
+          legend {
+            background: #ffffff no-repeat;
+            .legend-text {
+              height: fit-content;
+              width: fit-content;
+              text-align: left;
+              font-family: "poppins";
+              font-size: 18px;
+              letter-spacing: 0px;
+              opacity: 1;
+              white-space: nowrap;
+              display: flex;
+              column-gap: 4px;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              padding: 0 4px;
+            }
+          }
+        }
+
+        .city {
+          box-sizing: border-box;
+          background: #ffffff no-repeat;
+          min-width: 100%;
+          width: fit-content;
+          height: 70px;
+          opacity: 1;
+          margin: 20px 0 0 0;
+          display: flex;
+          align-items: end;
+          gap: 4px;
+          position: relative;
+          .city-fieldset {
+            height: 100%;
+            margin: 0;
+            min-width: 75%;
+          }
+          .add-more-city {
+            height: 80%;
+            width: 25%;
+            border-radius: 10px;
+            border: transparent;
+            outline: none;
+            background-color: #583ae0;
+            color: #ffffff;
+            font-family: "poppins";
+            letter-spacing: 0px;
+            margin-bottom: 1px;
+            cursor: pointer;
+          }
+
+          .city-suggestion {
+            border-radius: 6px;
+            background-color: #ffffff;
+            border: 2px solid #cacaca;
+            position: absolute;
+            width: 74%;
+            z-index: 100;
+            top: 100%;
+            .cities {
+              box-sizing: border-box;
+              margin: 0;
+              height: 2.5rem;
+              padding: 5px;
+              width: 100%;
+              font-family: "poppins";
+              font-size: 20px;
+              letter-spacing: 0px;
+              color: #222222;
+              opacity: 1;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              cursor: pointer;
+              &:hover {
+                background-color: #cacaca;
+              }
+            }
+          }
+        }
+        .age-field-container {
+          box-sizing: border-box;
+          background: #ffffff no-repeat;
+          min-width: 100%;
+          width: fit-content;
+          height: 70px;
+          opacity: 1;
+          margin: 20px 0 0 0;
+          display: flex;
+          gap: 6%;
+          .age-field {
+            height: 100%;
+            margin: 0;
+            min-width: 47%;
+          }
+        }
+        .description-feildset {
+          max-width: 100%;
+          height: 14%;
+          min-height: 70px;
+          margin: 20px 0 0 0;
+          position: relative;
+          padding-top: 2%;
+          margin-block-end: 20px;
+          .description-label {
+            position: absolute;
+            top: -4px;
+            left: 5.07%;
+            background: #ffffff no-repeat;
+            text-align: left;
+            font-family: "poppins";
+            font-size: 18px;
+            letter-spacing: 0px;
+            opacity: 1;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            column-gap: 4px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 0 4px;
+          }
+          .description-textarea {
+            resize: vertical;
+            min-width: 100%;
+            max-width: 100%;
+            height: 64%;
+            min-height: 70px;
+            box-sizing: border-box;
+            max-height: 100%;
+            border: 2px solid #cacaca;
+            border-radius: 10px;
+            background: #ffffff no-repeat;
+            outline: none;
+            font-family: "poppins";
+            font-size: 22px;
+            letter-spacing: 0px;
+            color: #222222;
+            opacity: 1;
+            text-align: left;
+            padding: 12px 5.07% 0;
+          }
+        }
+
+        select {
+          box-sizing: border-box;
+          width: 100%;
+          height: fit-content;
+          font-family: "poppins";
+          font-size: 22px;
+          letter-spacing: 0px;
+          color: #222222;
+          opacity: 1;
+          display: flex;
+          align-items: center;
+          border: none;
+          outline: none;
+          background-color: transparent;
+        }
+
+        input {
+          box-sizing: border-box;
+          width: 100%;
+          height: fit-content;
+          font-family: "poppins";
+          font-size: 20px;
+          letter-spacing: 0px;
+          color: #222222;
+          opacity: 1;
+          display: flex;
+          align-items: center;
+          border: none;
+          outline: none;
+          background-color: transparent;
+        }
+      }
+
+      .post-button {
+        border: transparent;
+        outline: none;
+        min-width: fit-content;
+        width: 28.62%;
+        height: 7.16%;
+        position: absolute;
+        background: #583ae0 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 1;
+        font-family: "poppins";
+        font-size: 22px;
+        letter-spacing: 0.88px;
+        color: #ffffff;
+        text-transform: uppercase;
+        right: 0;
+        bottom: 14%;
+        cursor: pointer;
+      }
+      .post-image {
+        position: absolute;
+        width: 16.18%;
+        height: 21.74%;
+        opacity: 1;
+        right: 49.8%;
+        bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (max-height: 900px) {
+  .job-post-main {
+    .job-post-page-content {
+      .container {
+        .post-button {
+          bottom: 10px;
+        }
+        .post-image {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .job-post-main {
+    .job-post-page-content {
+      .container {
+        fieldset {
+          legend {
+            .legend-text {
+              font-size: 16px;
+            }
+          }
+        }
+        .description-feildset {
+          .description-label {
+            font-size: 16px;
+          }
+          .description-textarea {
+            font-size: 18px;
+          }
+        }
+        select {
+          font-size: 18px;
+        }
+        input {
+          font-size: 18px;
+        }
+        .post-button {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .job-post-main {
+    .job-post-page-content {
+      top: 10.4%;
+      .container::-webkit-scrollbar {
+        display: none;
+      }
+      .container-header {
+        font-size: 18px;
+      }
+      .container {
+        display: block;
+        overflow-y: auto;
+        .left,
+        .right {
+          width: 100%;
+          box-sizing: border-box;
+          height: fit-content;
+          display: block;
+        }
+        .down {
+          padding-bottom: 23%;
+        }
+        fieldset {
+          legend {
+            .legend-text {
+              font-size: 14px;
+            }
+          }
+        }
+        .description-feildset {
+          .description-label {
+            font-size: 16px;
+          }
+          .description-textarea {
+            min-height: 50px;
+            font-size: 16px;
+          }
+        }
+        .separator {
+          display: none;
+        }
+        form {
+          width: 90%;
+          margin: auto;
+        }
+        select {
+          font-size: 16px;
+        }
+        input {
+          font-size: 16px;
+        }
+        .post-button {
+          bottom: 3%;
+          font-size: 16px;
+          right: 6%;
+          margin: 2% 0;
+        }
+        .post-image {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .job-post-main {
+    .job-post-page-content {
+      .container-header {
+        font-size: 16px;
+      }
+      .container {
+        form {
+          fieldset {
+            legend {
+              .legend-text {
+                font-size: 12px;
+              }
+            }
+          }
+          .description-feildset {
+            .description-label {
+              font-size: 12px;
+            }
+            .description-textarea {
+              font-size: 14px;
+              min-height: 40px;
+            }
+          }
+          select {
+            font-size: 14px;
+          }
+          input {
+            font-size: 14px;
+          }
+        }
+        .post-button {
+          font-size: 14px;
+          height: 8.5%;
+          bottom: 3%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.active-more-modal-container-backdrop {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    .more-modal{
+        background: #e2dede 0% 0% no-repeat padding-box;
+        border-radius: 15px;
+        opacity: 1;
+        display: grid;
+        gap: 10px;
+        place-items: center;
+        position: relative;
+        padding: 1rem;
+        font-family: 'poppins';
+        box-sizing: border-box;
+       
+        header{
+            text-align: left;
+            width:100%;
+            box-sizing: border-box;
+            .user-icon{
+                box-sizing: border-box;
+                padding: 2px 4px;
+                width: fit-content;
+                vertical-align:middle ;
+            }
+        }
+        .more-options-menu{
+            height: 30px;
+            box-sizing: border-box;
+            display: flex;
+            gap: 5px;
+            font-family: 'poppins';
+            margin-top: 5px;
+            .selected-button-inactive{
+                background-color: #ffffff;
+                color: black;
+                outline: none;
+                border: transparent;
+                border-radius: 5px;
+                cursor: pointer;
+                padding:0 15px;
+            }
+            .selected-button-active{
+                background-color: #5adbb5;
+                color: #ffffff;
+                outline: none;
+                border: transparent;
+                border-radius: 5px;
+                cursor: pointer;
+                padding:0 15px;
+            }
+            .rejected-button-inactive{
+                background-color: #ffffff;
+                color: black;
+                outline: none;
+                border: transparent;
+                border-radius: 5px;
+                cursor: pointer;
+                padding:0 15px;
+            }
+            .rejected-button-active{
+                background-color: #dd7973;
+                color: #ffffff;
+                outline: none;
+                border: transparent;
+                border-radius: 5px;
+                cursor: pointer;
+                padding:0 15px;
+            }
+            .call-for-interview-button-inactive{
+                background-color: #ffffff;
+                color: black;
+                outline: none;
+                border: transparent;
+                border-radius: 5px;
+                cursor: pointer;
+                padding:0 15px;
+            }
+            .call-for-interview-button-active{
+                background-color: #483af7;
+                color: #ffffff;
+                outline: none;
+                border: transparent;
+                border-radius: 5px;
+                cursor: pointer;
+                padding:0 15px;
+            }
+            .input-field{
+                outline: none;
+                border-radius: 5px;
+                border: 1px solid #dbd9d9;
+                padding:0 15px;
+            }
+            .submit-button{
+                background-color: #33b249;
+                outline: none;
+                border: transparent;
+                border-radius: 5px;
+                color: #ffffff;
+                cursor: pointer;
+                padding:0 15px;
+            } 
+        }
+        .modal-footer{
+            height: 30px;
+            box-sizing: border-box;
+            display: flex;
+            gap: 5px;
+            font-family: 'poppins';
+            margin-top: 5px;
+           
+            .cancel-button{
+                background-color: #ED0800;
+                outline: none;
+                border: transparent;
+                border-radius: 5px;
+                color: #ffffff;
+                cursor: pointer;
+                padding:0 15px;
+            }
+
+        }
+    }
+}
+.inactive-more-modal-container-backdrop {
+    display: none;
+  }
+  
